@@ -1,5 +1,7 @@
 # FuktKollen
 
+**Testa appen:** [fuktkollen.vercel.app](https://fuktkollen.vercel.app)
+
 Följer fukten i huset över tid, räknar bort vädret och visar om åtgärderna hjälper.
 
 ## Varför
