@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FuktKollen
 
-## Getting Started
+Följer fukten i huset över tid, räknar bort vädret och visar om åtgärderna hjälper.
 
-First, run the development server:
+## Varför
+Jag har ett hus från 1934 med en fuktig källare. Sensorer visar procent här och nu, men inte om det blir bättre efter en åtgärd, eller om fukten kommer från huset eller från vädret. FuktKollen ska svara på just det.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Status
+Under utveckling. Version 1: översikt, rumssida med graf och uppladdning av data för hand.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknik
+Next.js, TypeScript, Tailwind CSS och öppna väderdata från SMHI.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Köra lokalt
+    npm install
+    npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Öppna sedan http://localhost:3000.
 
-## Learn More
+## Dokumentation
+Projektet började med problemet, inte med koden:
+- [Brief](docs/brief.md): problem, användare och mål
+- [Beslut](docs/beslut/): varför saker valdes
+- [Antaganden](docs/antaganden.md): vad som ska testas
+- [Research](docs/research/): intervju, insikter och fakta om fukt
 
-To learn more about Next.js, take a look at the following resources:
+## AI i arbetet
+AI används för research, prototyper och rutinkod. Kärnlogiken skriver jag själv, och varje pull request säger vad AI gjorde.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licens
+MIT
